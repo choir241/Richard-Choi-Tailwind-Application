@@ -1,3 +1,6 @@
+import "../public/styles.css";
+import Header from "../components/Header";
+
 export default function RootLayout({
   children, // will be a page or nested layout
 }: {
@@ -8,9 +11,12 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <title>Richard Choi</title>
       </head>
-      <body>
+      <body className="bg-black">
+        <Header />
         {children}
       </body>
     </html>
