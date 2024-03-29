@@ -11,17 +11,17 @@ export default function Documentation(){
             <h2 className = "text-6xl my-12 px-5">Documentation</h2>
 
             <p className = "text-base px-6 pb-6">
-         During the first couple weeks of October, I was tasked with the
+             During the first couple weeks of October, I was tasked with the
           low-level research and presentation of the following topics:
           TypeScript, Next Webpack 5, Next App Routing, Zustand and Context API,
           and local storage, session storage, and local state. I also prepared
           and presented my findings to my team members, improving upon my
           documentation using the feedback and suggestions I received.
           </p>
-            <div className = "flex justify-evenly items-center">      
-                <Image src = {documentation} alt = "" className = "w-1/4"/>
-                <Image src = {documentation1} alt = "" className = "w-1/4"/>
-                <Image src = {documentation2} alt = "" className = "w-1/4"/>
+            <div className = "flex justify-evenly items-center max-[800px]:flex-col">      
+                <Image src = {documentation} alt = "" className = "w-1/4 max-[800px]:w-full max-[800px]:px-8"/>
+                <Image src = {documentation1} alt = "" className = "w-1/4 max-[800px]:w-full max-[800px]:px-8"/>
+                <Image src = {documentation2} alt = "" className = "w-1/4 max-[800px]:w-full max-[800px]:px-8"/>
             </div>
 
             <Link href = "https://choir.hashnode.dev/low-level-documentation" className = "border-b-2 text-lg pb-1 pt-8 mx-6">Documentation Link</Link>

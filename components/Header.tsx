@@ -7,7 +7,7 @@ import profile from "../assets/profile.png";
 export default function Header() {
   return (
     <header className="p-2">
-      <section className="flex justify-between items-end px-7 pb-4">
+      <section className="flex justify-between items-end px-7 pb-4 mb-8 mt-2">
         <h2 className="text-4xl">RichardChoi</h2>
 
         <div className="flex">
@@ -30,7 +30,7 @@ export default function Header() {
         </div>
       </section>
 
-      <section className="flex justify-center">
+      <section className="flex justify-center max-[800px]:flex-col max-[800px]:items-center">
         <div
           className="flex flex-col justify-center w-4/6 mr-2"
         >
@@ -41,13 +41,14 @@ export default function Header() {
             the community!
           </h2>
 
-          <p className="text-xl px-1 mt-6">
+          <p className="text-xl px-1 mt-6 mb-10">
             Located in NJ, I'm a developer that loves meeting new people,
             learning new concepts, and building new projects.
           </p>
         </div>
 
         <Image
+          className = "max-[800px]:px-10"
           priority={true}
           src={profile}
           alt="professional profile snapshot of Richard Choi"

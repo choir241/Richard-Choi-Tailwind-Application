@@ -43,20 +43,20 @@ export default function Projects(){
     return(
         <section id = "myProjects" className = "flex flex-col items-left p-2">
             <h2 className = "text-6xl my-12 px-5">Projects</h2>
-            <section className = "flex">
+            <section className = "flex max-[1000px]:flex-col max-[1000px]:items-center">
                 {projects.map((project: Project)=>{
                     return(
                         <section className = "p-4" key = {project.projectName}>
                             <Image src = {project.projectIMG} alt = {project.projectALT}/>
-                            <h3 className = "pt-4 text-4xl">{project.projectName}</h3>
-                            <div className = "flex justify-between w-2/6 mb-3">
-                                <Link href = {project.demoURL} className = "border-b-2 border-b-black-700 text-lg pb-1 pt-2">Project Demo</Link>
+                            <h3 className = "pt-4 text-4xl mb-4">{project.projectName}</h3>
+                            <div className = "mb-3">
+                                <Link href = {project.demoURL} className = "border-b-2 border-b-black-700 text-lg pb-1 pt-2 mr-10">Project Demo</Link>
                                 <Link href = {project.codeURL} className = "border-b-2 border-b-black-700 text-lg pb-1 pt-2">Project URL</Link>
                             </div>
-                            <div className = "flex justify-between w-2/5 mb-4">
+                            <div className = "mb-4">
                                 {project.projectTech.map((language: string)=>{
                                     return(
-                                        <span className = "uppercase text-base mt-2" key = {language}>
+                                        <span className = "uppercase text-base mt-2 mr-10" key = {language}>
                                             {language}
                                         </span>
                                     )
