@@ -1,12 +1,12 @@
-import Projects from "../components/Projects"
-import Documentation from "../components/Documentation"
+import Project from "../components/Project";
+import Documentation from "../components/Documentation";
 
 export default function Home() {
   return (
     <main>
-      <Projects/>
+      <Project />
 
-      <Documentation/>
+      <Documentation />
     </main>
   );
 }
