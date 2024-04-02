@@ -2,9 +2,9 @@ import Gridiron from "../assets/gridIron.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Experience() {
+export default function OpenSource() {
   return (
-    <section id="openSource">
+    <section id="openSource" className="pb-8">
       <h2 className="text-6xl my-12 px-5">GridIron</h2>
       <p className="text-2xl px-6 pb-6">
         GridIron is an open source application being led by Shashi Lo, a Senior
@@ -22,15 +22,19 @@ export default function Experience() {
         still unfamiliar with and discover another passion of mine.
       </p>
 
-      <Link
-        href="https://www.youtube.com/watch?v=O6rnTPob7VY&ab_channel=CodingwithShashi"
-        className="flex justify-center p-6"
-      >
+      <div className="flex justify-center mb-8">
         <Image
           src={Gridiron}
           alt="GridIron preview thumbnail of all team members"
           width={1000}
         />
+      </div>
+
+      <Link
+        href="https://www.youtube.com/watch?v=O6rnTPob7VY&ab_channel=CodingwithShashi"
+        className="mx-4 border-b-2 text-4xl pb-1 pt-8 hover:pb-3 hover:ease-in hover:duration-300"
+      >
+        Youtube Live Link
       </Link>
     </section>
   );

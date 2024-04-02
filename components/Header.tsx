@@ -24,7 +24,7 @@ export default function Header() {
           <div className="flex max-[1000px]:items-center max-[1000px]:justify-center">
             <Link
               href="https://github.com/choir27"
-              className="text-white px-1 flex items-center text-2xl"
+              className="text-white px-1 flex items-center text-2xl hover:opacity-70 hover:ease-in hover:duration-300"
               aria-label="Read more about Seminole tax hike"
             >
               <span className="hidden">Github Logo</span>
@@ -33,7 +33,7 @@ export default function Header() {
             </Link>
             <Link
               href="https://www.linkedin.com/in/richard-choir/"
-              className="text-white px-3 flex items-center text-2xl"
+              className="text-white px-3 flex items-center text-2xl hover:opacity-70 hover:ease-in hover:duration-300"
               aria-label="Read more about Seminole tax hike"
             >
               <span className="hidden">LinkedIn Logo</span>
