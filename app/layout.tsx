@@ -21,7 +21,7 @@ export default function RootLayout({
         <title>Richard Choi</title>
       </head>
       <body className="bg-black flex flex-col items-center">
-        <Nav/>
+        <Nav />
         <Header />
         {children}
       </body>
