@@ -7,7 +7,7 @@ export default function Nav() {
   const [toggleMenu, setToggleMenu] = useState("hidden");
 
   return (
-    <nav className="fixed hidden flex-col self-end bg-black w-full max-[1000px]:flex">
+    <nav className="fixed hidden flex-col self-end bg-black w-full max-[1000px]:flex" id = "lookingForward">
       <IoIosMenu
         className={`text-6xl self-end hover:cursor-pointer hover:scale-75 hover:ease-in hover:duration-300 ${toggleMenu === "hidden" ? "" : "hidden"}`}
         onClick={() => setToggleMenu("flex")}
@@ -35,6 +35,11 @@ export default function Nav() {
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
           <Link className="text-4xl" href="#experience">
             Experience
+          </Link>
+        </li>
+        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
+          <Link className="text-4xl" href="#forward">
+            Looking Forward
           </Link>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">

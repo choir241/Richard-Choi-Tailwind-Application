@@ -6,7 +6,7 @@ import profile from "../assets/profile.png";
 
 export default function Header() {
   return (
-    <header className="p-2 pt-10">
+    <header className="p-2 pt-16">
       <section className="flex justify-center max-[1000px]:flex-col max-[1000px]:items-center">
         <div className="flex flex-col justify-center w-4/6 mr-2">
           <h1 className="text-8xl mb-8">Richard Choi</h1>
