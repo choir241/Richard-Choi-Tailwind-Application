@@ -43,7 +43,7 @@ export default function Project() {
   };
 
   return (
-    <section id="myProjects" className="flex flex-col items-left p-2">
+    <section id="myProject" className="flex flex-col items-left p-2">
       <h2 className="text-6xl my-12 px-5">Projects</h2>
       <section className="flex flex-col items-center">
         {

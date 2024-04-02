@@ -1,5 +1,6 @@
 import "../public/styles.css";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export default function RootLayout({
   children, // will be a page or nested layout
@@ -19,7 +20,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <title>Richard Choi</title>
       </head>
-      <body className="bg-black">
+      <body className="bg-black flex flex-col items-center">
+        <Nav/>
         <Header />
         {children}
       </body>
