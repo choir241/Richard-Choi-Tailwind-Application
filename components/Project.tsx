@@ -87,7 +87,7 @@ export default function Project() {
                 {project.projectTech.map((language: string) => {
                   return (
                     <span
-                      className="uppercase text-2xl mt-2 mr-10"
+                      className="uppercase text-2xl mt-2 mr-8"
                       key={language}
                     >
                       {language}
