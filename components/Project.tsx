@@ -1,9 +1,12 @@
+"use client";
 import echostream from "../assets/echostream.png";
 import illyaFanSite from "../assets/illya-fansite.png";
 import illyaFullStack from "../assets/illya-fullstack.png";
 import kpopWired from "../assets/kpop-wired.png";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import Button from "../components/Button";
+import { useState } from "react";
 
 export default function Project() {
   interface Project {
@@ -41,6 +44,21 @@ export default function Project() {
       "Considering my latest iteration of EchoStream, I felt like the theme of the application didn't reflect its overall functionality or purpose, so I changed the theme and \"branding\" to be more music-oriented. Using useCallback and useMemo, I memoized many of the functions I needed to utilize to prevent unnecessary re-rendering, thus increasing the render speed of the overall application. I was also able to become more familiar with other React in-built hooks, like useMemo, useNavigate, and useHistory, experimenting with them and understanding what they're capable of accomplishing.",
     ],
   };
+
+  const [toggleIllya, setToggleIllya] = useState("hidden");
+  const [toggleFSIllya, setToggleFSIllya] = useState("hidden");
+  const [toggleKpop, setToggleKpop] = useState("hidden");
+
+  function toggleDisplay(
+    display: string,
+    setDisplay: (e: string) => void,
+  ): void {
+    if (display === "hidden") {
+      setDisplay("block");
+    } else {
+      setDisplay("hidden");
+    }
+  }
 
   return (
     <section id="myProject" className="flex flex-col items-left p-2">
@@ -82,20 +100,74 @@ export default function Project() {
 
             <section className="pt-10">
               <h3 className="pt-4 text-4xl mb-4">{project.projectName[1]}</h3>
-              <Image src={project.projectIMG[1]} alt={project.projectALT[1]} />
-              <p className="text-2xl mt-6">{project.projectDescription[1]}</p>
+              <Button
+                text={`${toggleIllya === "hidden" ? "Show Details" : "Hide Details"}`}
+                onClick={() => toggleDisplay(toggleIllya, setToggleIllya)}
+              />
+              <Image
+                src={project.projectIMG[1]}
+                alt={project.projectALT[1]}
+                className={`${toggleIllya === "hidden" ? toggleIllya : ""}`}
+              />
+              <p className={`text-2xl mt-6 ${toggleIllya}`}>
+                {project.projectDescription[1]}
+              </p>
+              {toggleIllya === "hidden" ? (
+                ""
+              ) : (
+                <Button
+                  text={`${toggleIllya === "hidden" ? "Show Details" : "Hide Details"}`}
+                  onClick={() => toggleDisplay(toggleIllya, setToggleIllya)}
+                />
+              )}
             </section>
 
             <section className="pt-10">
               <h3 className="pt-4 text-4xl mb-4">{project.projectName[2]}</h3>
-              <Image src={project.projectIMG[2]} alt={project.projectALT[2]} />
-              <p className="text-2xl mt-6">{project.projectDescription[2]}</p>
+              <Button
+                text={`${toggleFSIllya === "hidden" ? "Show Details" : "Hide Details"}`}
+                onClick={() => toggleDisplay(toggleFSIllya, setToggleFSIllya)}
+              />
+              <Image
+                src={project.projectIMG[2]}
+                alt={project.projectALT[2]}
+                className={`${toggleFSIllya === "hidden" ? toggleFSIllya : ""}`}
+              />
+              <p className={`text-2xl mt-6 ${toggleFSIllya}`}>
+                {project.projectDescription[2]}
+              </p>
+              {toggleFSIllya === "hidden" ? (
+                ""
+              ) : (
+                <Button
+                  text={`${toggleFSIllya === "hidden" ? "Show Details" : "Hide Details"}`}
+                  onClick={() => toggleDisplay(toggleFSIllya, setToggleFSIllya)}
+                />
+              )}
             </section>
 
             <section className="pt-10">
               <h3 className="pt-4 text-4xl mb-4">{project.projectName[3]}</h3>
-              <Image src={project.projectIMG[3]} alt={project.projectALT[3]} />
-              <p className="text-2xl mt-6">{project.projectDescription[3]}</p>
+              <Button
+                text={`${toggleKpop === "hidden" ? "Show Details" : "Hide Details"}`}
+                onClick={() => toggleDisplay(toggleKpop, setToggleKpop)}
+              />
+              <Image
+                src={project.projectIMG[3]}
+                alt={project.projectALT[3]}
+                className={`${toggleKpop === "hidden" ? toggleKpop : ""}`}
+              />
+              <p className={`text-2xl mt-6 ${toggleKpop}`}>
+                {project.projectDescription[3]}
+              </p>
+              {toggleKpop === "hidden" ? (
+                ""
+              ) : (
+                <Button
+                  text={`${toggleKpop === "hidden" ? "Show Details" : "Hide Details"}`}
+                  onClick={() => toggleDisplay(toggleKpop, setToggleKpop)}
+                />
+              )}
             </section>
           </section>
         }

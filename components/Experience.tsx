@@ -29,7 +29,7 @@ export default function Experience() {
         <Image
           src={Gridiron}
           alt="GridIron preview thumbnail of all team members"
-          width={800}
+          width={1000}
         />
       </Link>
     </section>
