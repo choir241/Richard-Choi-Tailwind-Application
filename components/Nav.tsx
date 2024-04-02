@@ -32,6 +32,11 @@ export default function Nav() {
             Open Source
           </Link>
         </li>
+        <li className="mb-2 hover:translate-x-10 hover:ease-in hover:duration-300">
+          <Link className="text-4xl" href="#aboutMe">
+            About Me
+          </Link>
+        </li>
       </ul>
     </nav>
   );
