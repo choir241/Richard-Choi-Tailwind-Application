@@ -1,6 +1,6 @@
 export default function LookingForward() {
   return (
-    <section id="lookingForward" className="mb-4">
+    <section id="forward" className="mb-4">
       <h2 className="text-6xl my-12 px-5">What I'm Looking Forward To</h2>
 
       <p className="px-5 leading-10 text-2xl">
