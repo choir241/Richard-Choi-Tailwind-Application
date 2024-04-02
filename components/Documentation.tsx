@@ -43,7 +43,7 @@ export default function Documentation() {
 
       <Link
         href="https://choir.hashnode.dev/low-level-documentation"
-        className="border-b-2 text-lg pb-1 pt-8 mx-6"
+        className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300"
       >
         Documentation Link
       </Link>

@@ -1,6 +1,6 @@
 import Project from "../components/Project";
 import Documentation from "../components/Documentation";
-import Experience from "../components/Experience";
+import OpenSource from "../components/OpenSource";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
 
       <Documentation />
 
-      <Experience />
+      <OpenSource />
     </main>
   );
 }

@@ -72,13 +72,13 @@ export default function Project() {
               <div className="mb-6 pt-6">
                 <Link
                   href={project.demoURL}
-                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 mr-10"
+                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300"
                 >
                   Project Demo
                 </Link>
                 <Link
                   href={project.codeURL}
-                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2"
+                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 hover:pb-3 hover:ease-in hover:duration-300"
                 >
                   Code URL
                 </Link>
