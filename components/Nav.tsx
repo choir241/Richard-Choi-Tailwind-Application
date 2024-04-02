@@ -8,10 +8,10 @@ export default function Nav(){
     const [toggleMenu, setToggleMenu] = useState("hidden");
 
     return(
-        <nav className = "fixed flex flex-col self-end p-4 bg-black">
-            <IoIosMenu className = {`text-6xl ${toggleMenu === 'hidden' ? "" : "hidden"}`} onClick = {()=>setToggleMenu("block")}/>
+        <nav className = "fixed hidden flex-col self-end bg-black w-full max-[800px]:flex">
+            <IoIosMenu className = {`text-6xl self-end ${toggleMenu === 'hidden' ? "" : "hidden"}`} onClick = {()=>setToggleMenu("flex")}/>
             <IoIosClose className = {`text-6xl self-end ${toggleMenu === 'hidden' ? "hidden" : ""}`} onClick = {()=>setToggleMenu("hidden")}/>
-            <ul className = {toggleMenu}>
+            <ul className = {`${toggleMenu} items-center flex-col pb-4 px-4`}>
                 <li className = "mb-2"><Link className = "text-4xl" href = "#myProject">My Project</Link></li>
                 <li><Link className = "text-4xl" href = "#documentation">Documentation</Link></li>
             </ul>
