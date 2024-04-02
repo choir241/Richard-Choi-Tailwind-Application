@@ -24,36 +24,37 @@ export default function AboutMe() {
         </li>
 
         <li className="list-disc ml-10 text-lg">
-          Getting to meet new people in tech and catching with friends at
-          meetups, I am able to not only have fun by being with amazing people,
-          but I get talk about the tech world and coding.
+          By getting to meet new people in tech and catching up with friends at
+          meetups, I cannot only have fun by being with amazing people, but I
+          get to talk about the tech world and coding.
         </li>
         <li></li>
       </ul>
 
-      <div className="flex justify-center items-center flex-wrap max-[1000px]:flex-col">
+      <div className="flex flex-wrap justify-evenly items-center flex-col">
         <Image
           src={drawing1}
           alt="my drawing of Miko Ino from the anime Kaguya-sama: Love is War"
-          width={500}
-          className="mr-10 max-[1000px]:mr-0 max-[1000px]:mt-8 mb-8"
+          width={800}
+          className="mt-8 max-[1000px]:w-4/5"
         />
         <Image
           src={drawing2}
           alt="my drawing of Megumin from the anime Konosuba"
-          width={500}
-          className="mb-8"
+          width={800}
+          className="mt-8 max-[1000px]:w-4/5"
         />
         <Image
           src={codeAndCoffee}
           alt="linknedIn post of code and coffee meetup"
-          width={500}
-          className="mr-10 max-[1000px]:mr-0 max-[1000px]:mb-8"
+          width={800}
+          className="mt-8 max-[1000px]:w-4/5"
         />
         <Image
           src={storybook}
           alt="linkedIn post of storybook meetup"
-          width={500}
+          width={800}
+          className="mt-8 max-[1000px]:w-4/5"
         />
       </div>
     </section>
