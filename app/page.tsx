@@ -3,6 +3,7 @@ import Documentation from "../components/Documentation";
 import OpenSource from "../components/OpenSource";
 import AboutMe from "../components/AboutMe";
 import Experience from "../components/Experience";
+import LookingForward from "../components/LookingForward";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <OpenSource />
 
       <Experience />
+
+      <LookingForward />
 
       <AboutMe />
     </main>

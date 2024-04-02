@@ -10,8 +10,8 @@ export default function Experience() {
 
       <section>
         <h3 className="text-4xl my-12 px-10">Non Profit Organizations</h3>
-        <Image src={LJL} alt="" className="w-3/5 px-10" />
-        <p className="px-10 leading-7 mt-6">
+        <Image src={LJL} alt="" className="px-10" width={800} />
+        <p className="text-2xl px-10 leading-10 mt-6">
           I designed various UI elements for applications and implemented the
           functionality for the backend, which improved the customer experience.
           Also, I suggested many changes to existing applications to either
@@ -26,7 +26,7 @@ export default function Experience() {
 
       <section>
         <h3 className="text-4xl my-12 px-10">Freelance</h3>
-        <Image src={realEstateBeast} alt="" className="w-3/5 px-10" />
+        <Image src={realEstateBeast} alt="" className="px-10" width={800} />
         <div className="mb-6 pt-6 px-10 max-[1000px]:flex-col max-[1000px]:flex items-start">
           <Link
             href="https://therealestatebeast.netlify.app/"
@@ -42,7 +42,7 @@ export default function Experience() {
           </Link>
         </div>
 
-        <p className="px-10 leading-7">
+        <p className="text-2xl px-10 leading-10">
           Optimized render time by redirecting the videos to YouTube and
           decreasing the burden on the original site, increasing retention time
           for potential users. Established clear communications with the client
@@ -56,7 +56,7 @@ export default function Experience() {
       <section>
         <h3 className="text-4xl my-12 px-10">Non-tech experience</h3>
 
-        <p className="px-10 leading-7">
+        <p className="text-2xl px-10 leading-10">
           I was a Bank Teller at Northfield Bank located at Ewing NJ from 2019
           to March 2021. During my time there, I was able to increase sales by
           redirecting clients who were interested in purchasing bank product(s)

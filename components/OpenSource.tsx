@@ -6,7 +6,7 @@ export default function OpenSource() {
   return (
     <section id="openSource" className="pb-8">
       <h2 className="text-6xl my-12 px-5">GridIron</h2>
-      <p className="text-2xl px-6 pb-6">
+      <p className="text-2xl px-6 pb-6 leading-10">
         GridIron is an open-source application being led by Shashi Lo, a Senior
         UX Engineer at Microsoft. It is an NFL project to figure out who the
         last survivor will be by picking teams, and it helps bridge the gap for
