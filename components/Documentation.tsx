@@ -21,7 +21,7 @@ export default function Documentation() {
         Next Webpack 5, Next App Routing, Zustand and Context API, local
         storage, session storage, and local state. After my final presentation
         and being satisfied with both my presentation and my documentation, I
-        publically published my findings and research online.
+        publicly published my findings and research online.
       </p>
       <div className="flex justify-evenly items-center max-[800px]:flex-col">
         <Image
