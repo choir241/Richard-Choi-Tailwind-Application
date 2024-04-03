@@ -1,9 +1,11 @@
 export default function LookingForward() {
   return (
     <section id="forward" className="mb-4">
-      <h2 className="text-6xl my-12 px-5">What I'm Looking Forward To</h2>
+      <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        What I'm Looking Forward To
+      </h2>
 
-      <p className="px-5 leading-10 text-2xl">
+      <p className="px-5 leading-10 text-2xl min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
         I'm excited about visually seeing my growth as an engineer through my
         code. Looking back at older code, I'm able to literally see the
         progression I have made as I learned new concepts, tech languages, and

@@ -6,12 +6,16 @@ import Link from "next/link";
 export default function Experience() {
   return (
     <section id="experience" className="flex items-start flex-col">
-      <h2 className="text-6xl my-12 px-5">Experience</h2>
+      <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        Experience
+      </h2>
 
       <section>
-        <h3 className="text-4xl my-12 px-10">Non Profit Organizations</h3>
+        <h3 className="text-4xl my-12 px-10 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          Non Profit Organizations
+        </h3>
         <Image src={LJL} alt="" className="px-10" width={800} />
-        <p className="text-2xl px-10 leading-10 mt-6">
+        <p className="text-2xl px-10 leading-10 mt-6 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
           I designed various UI elements for applications and implemented the
           functionality for the backend, which improved the customer experience.
           Also, I suggested many changes to existing applications to either
@@ -25,24 +29,26 @@ export default function Experience() {
       </section>
 
       <section>
-        <h3 className="text-4xl my-12 px-10">Freelance</h3>
+        <h3 className="text-4xl my-12 px-10 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          Freelance
+        </h3>
         <Image src={realEstateBeast} alt="" className="px-10" width={800} />
         <div className="mb-6 pt-6 px-10 max-[1000px]:flex-col max-[1000px]:flex items-start">
           <Link
             href="https://therealestatebeast.netlify.app/"
-            className="border-b-2 border-b-black-700 text-4xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300"
+            className="border-b-2 border-b-black-700 text-4xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
           >
             Project Demo
           </Link>
           <Link
             href="https://github.com/choir27/The-Real-Estate-Beast"
-            className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 hover:pb-3 hover:ease-in hover:duration-300"
+            className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
           >
             Code URL
           </Link>
         </div>
 
-        <p className="text-2xl px-10 leading-10">
+        <p className="text-2xl px-10 leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
           Optimized render time by redirecting the videos to YouTube and
           decreasing the burden on the original site, increasing retention time
           for potential users. Established clear communications with the client
@@ -54,9 +60,11 @@ export default function Experience() {
       </section>
 
       <section>
-        <h3 className="text-4xl my-12 px-10">Non-tech experience</h3>
+        <h3 className="text-4xl my-12 px-10 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          Non-tech experience
+        </h3>
 
-        <p className="text-2xl px-10 leading-10">
+        <p className="text-2xl px-10 leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
           I was a Bank Teller at Northfield Bank located at Ewing NJ from 2019
           to March 2021. During my time there, I was able to increase sales by
           redirecting clients who were interested in purchasing bank product(s)

@@ -1,9 +1,9 @@
-import Project from "../components/Project";
-import Documentation from "../components/Documentation";
-import OpenSource from "../components/OpenSource";
-import AboutMe from "../components/AboutMe";
-import Experience from "../components/Experience";
-import LookingForward from "../components/LookingForward";
+import Project from "../pages/Project";
+import Documentation from "../pages/Documentation";
+import OpenSource from "../pages/OpenSource";
+import AboutMe from "../pages/AboutMe";
+import Experience from "../pages/Experience";
+import LookingForward from "../pages/LookingForward";
 
 export default function Home() {
   return (
