@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useState } from "react";
 
@@ -21,34 +20,34 @@ export default function Nav() {
       />
       <ul className={`${toggleMenu} items-center flex-col pb-4 px-4`}>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#myProject">
+          <a className="text-4xl" href="#myProject">
             My Project
-          </Link>
+          </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#documentation">
+          <a className="text-4xl" href="#documentation">
             Documentation
-          </Link>
+          </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#openSource">
+          <a className="text-4xl" href="#openSource">
             Open Source
-          </Link>
+          </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#experience">
+          <a className="text-4xl" href="#experience">
             Experience
-          </Link>
+          </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#forward">
+          <a className="text-4xl" href="#forward">
             Looking Forward
-          </Link>
+          </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="#aboutMe">
+          <a className="text-4xl" href="#aboutMe">
             About Me
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
