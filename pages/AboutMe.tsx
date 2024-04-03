@@ -1,7 +1,7 @@
 import drawing1 from "../assets/drawing1.jpg";
 import drawing2 from "../assets/drawing2.jpg";
 import codeAndCoffee from "../assets/CodeAndCoffee.png";
-import storybook from "../assets/Storybook.png";
+import storybook from "../assets/storybook.png";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -13,7 +13,7 @@ export default function AboutMe() {
 
       <ul className="max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:px-10">
         <li className="list-disc ml-10 text-2xl leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
-          I love to take walks outside, it's a great way to clear my head and
+          I love to take walks outside, it is a great way to clear my head and
           it's a great break from the screen.
         </li>
         <li className="list-disc ml-10 text-2xl leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
@@ -21,7 +21,7 @@ export default function AboutMe() {
           regulate my stress while also being a great method to wake up.
         </li>
         <li className="list-disc ml-10 text-2xl leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
-          I love to draw, it's a passion of mine and it's something I continue
+          I love to draw, it is a passion of mine and it is something I continue
           to work and improve on, just like coding.
         </li>
 

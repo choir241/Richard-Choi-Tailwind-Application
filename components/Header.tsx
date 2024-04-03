@@ -19,7 +19,7 @@ export default function Header() {
           </h2>
 
           <p className="text-4xl px-1 mt-6 mb-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
-            Located in NJ, I'm a developer that loves meeting new people,
+            Located in NJ, I am a developer that loves meeting new people,
             learning new concepts, and building new projects.
           </p>
 
