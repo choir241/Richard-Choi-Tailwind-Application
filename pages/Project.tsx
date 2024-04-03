@@ -62,23 +62,27 @@ export default function Project() {
 
   return (
     <section id="myProject" className="flex flex-col items-left p-2">
-      <h2 className="text-6xl my-12 px-5">Projects</h2>
+      <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        Projects
+      </h2>
       <section className="flex flex-col items-center">
         {
           <section className="p-4" key={project.projectName[0]}>
             <section>
-              <h3 className="text-6xl mb-4">{project.projectName[0]}</h3>
+              <h3 className="text-6xl mb-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+                {project.projectName[0]}
+              </h3>
               <Image src={project.projectIMG[0]} alt={project.projectALT[0]} />
               <div className="mb-6 pt-6">
                 <Link
                   href={project.demoURL}
-                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300"
+                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
                 >
                   Project Demo
                 </Link>
                 <Link
                   href={project.codeURL}
-                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 hover:pb-3 hover:ease-in hover:duration-300"
+                  className="border-b-2 border-b-black-700 text-4xl pb-1 pt-2 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
                 >
                   Code URL
                 </Link>
@@ -87,7 +91,7 @@ export default function Project() {
                 {project.projectTech.map((language: string) => {
                   return (
                     <span
-                      className="uppercase text-2xl mt-2 mr-8"
+                      className="uppercase text-2xl mt-2 mr-8 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]"
                       key={language}
                     >
                       {language}
@@ -95,11 +99,15 @@ export default function Project() {
                   );
                 })}
               </div>
-              <p className="text-2xl">{project.projectDescription[0]}</p>
+              <p className="text-2xl min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
+                {project.projectDescription[0]}
+              </p>
             </section>
 
             <section className="pt-10">
-              <h3 className="pt-4 text-4xl mb-4">{project.projectName[1]}</h3>
+              <h3 className="pt-4 text-4xl mb-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+                {project.projectName[1]}
+              </h3>
               <Button
                 text={`${toggleIllya === "hidden" ? "Show Details" : "Hide Details"}`}
                 onClick={() => toggleDisplay(toggleIllya, setToggleIllya)}
@@ -109,21 +117,17 @@ export default function Project() {
                 alt={project.projectALT[1]}
                 className={`${toggleIllya === "hidden" ? toggleIllya : ""}`}
               />
-              <p className={`text-2xl mt-6 ${toggleIllya}`}>
+              <p
+                className={`text-2xl mt-6 ${toggleIllya} min-[2400px]:text-6xl min-[2400px]:leading-[6rem]`}
+              >
                 {project.projectDescription[1]}
               </p>
-              {toggleIllya === "hidden" ? (
-                ""
-              ) : (
-                <Button
-                  text={`${toggleIllya === "hidden" ? "Show Details" : "Hide Details"}`}
-                  onClick={() => toggleDisplay(toggleIllya, setToggleIllya)}
-                />
-              )}
             </section>
 
             <section className="pt-10">
-              <h3 className="pt-4 text-4xl mb-4">{project.projectName[2]}</h3>
+              <h3 className="pt-4 text-4xl mb-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+                {project.projectName[2]}
+              </h3>
               <Button
                 text={`${toggleFSIllya === "hidden" ? "Show Details" : "Hide Details"}`}
                 onClick={() => toggleDisplay(toggleFSIllya, setToggleFSIllya)}
@@ -133,21 +137,17 @@ export default function Project() {
                 alt={project.projectALT[2]}
                 className={`${toggleFSIllya === "hidden" ? toggleFSIllya : ""}`}
               />
-              <p className={`text-2xl mt-6 ${toggleFSIllya}`}>
+              <p
+                className={`text-2xl mt-6 ${toggleFSIllya} min-[2400px]:text-6xl min-[2400px]:leading-[6rem]`}
+              >
                 {project.projectDescription[2]}
               </p>
-              {toggleFSIllya === "hidden" ? (
-                ""
-              ) : (
-                <Button
-                  text={`${toggleFSIllya === "hidden" ? "Show Details" : "Hide Details"}`}
-                  onClick={() => toggleDisplay(toggleFSIllya, setToggleFSIllya)}
-                />
-              )}
             </section>
 
             <section className="pt-10">
-              <h3 className="pt-4 text-4xl mb-4">{project.projectName[3]}</h3>
+              <h3 className="pt-4 text-4xl mb-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+                {project.projectName[3]}
+              </h3>
               <Button
                 text={`${toggleKpop === "hidden" ? "Show Details" : "Hide Details"}`}
                 onClick={() => toggleDisplay(toggleKpop, setToggleKpop)}
@@ -157,17 +157,11 @@ export default function Project() {
                 alt={project.projectALT[3]}
                 className={`${toggleKpop === "hidden" ? toggleKpop : ""}`}
               />
-              <p className={`text-2xl mt-6 ${toggleKpop}`}>
+              <p
+                className={`text-2xl mt-6 ${toggleKpop} min-[2400px]:text-6xl min-[2400px]:leading-[6rem]`}
+              >
                 {project.projectDescription[3]}
               </p>
-              {toggleKpop === "hidden" ? (
-                ""
-              ) : (
-                <Button
-                  text={`${toggleKpop === "hidden" ? "Show Details" : "Hide Details"}`}
-                  onClick={() => toggleDisplay(toggleKpop, setToggleKpop)}
-                />
-              )}
             </section>
           </section>
         }

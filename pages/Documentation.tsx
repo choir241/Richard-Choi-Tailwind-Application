@@ -7,9 +7,11 @@ import Link from "next/link";
 export default function Documentation() {
   return (
     <section id="documentation" className="flex flex-col items-start pb-8">
-      <h2 className="text-6xl my-12 px-5">Documentation</h2>
+      <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        Documentation
+      </h2>
 
-      <p className="text-2xl px-6 pb-6">
+      <p className="text-2xl px-6 pb-6 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
         During the first couple weeks of October, I was tasked with the
         low-level research and presentation of the following topics: TypeScript,
         Next Webpack 5, Next App Routing, Zustand and Context API, and local
@@ -43,7 +45,7 @@ export default function Documentation() {
 
       <Link
         href="https://choir.hashnode.dev/low-level-documentation"
-        className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300"
+        className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
       >
         Documentation Link
       </Link>
