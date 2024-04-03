@@ -1,7 +1,7 @@
 import drawing1 from "../assets/drawing1.jpg";
 import drawing2 from "../assets/drawing2.jpg";
 import codeAndCoffee from "../assets/CodeAndCoffee.png";
-import storybook from "../assets/Storybook.png";
+import storybook from "../assets/storybook.png";
 import Image from "next/image";
 
 export default function AboutMe() {
